@@ -1,3 +1,3 @@
-module github.com/gocnn/gomet
+module github.com/gocnn/gomtl
 
 go 1.25
