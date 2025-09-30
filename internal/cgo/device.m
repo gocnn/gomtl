@@ -1,5 +1,3 @@
-// +build darwin
-
 #import <Metal/Metal.h>
 #include "device.h"
 

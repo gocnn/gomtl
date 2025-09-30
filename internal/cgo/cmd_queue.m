@@ -1,7 +1,5 @@
-// +build darwin
-
 #import <Metal/Metal.h>
-#include "command_queue.h"
+#include "cmd_queue.h"
 
 void * Device_NewCommandQueue(void * device) {
 	return [(id<MTLDevice>)device newCommandQueue];

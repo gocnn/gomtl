@@ -1,5 +1,3 @@
-// +build darwin
-
 #include "mtl.h"
 
 void * Device_NewCommandQueue(void * device);

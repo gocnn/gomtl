@@ -1,5 +1,3 @@
-// +build darwin
-
 #include "mtl.h"
 
 void CommandEncoder_EndEncoding(void * commandEncoder);

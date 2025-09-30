@@ -1,5 +1,3 @@
-// +build darwin
-
 #include "stddef.h"
 #include "stdbool.h"
 

@@ -1,5 +1,3 @@
-// +build darwin
-
 #include "mtl.h"
 
 struct RenderPassDescriptor {
