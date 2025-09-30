@@ -7,6 +7,9 @@ import (
 )
 
 func main() {
-	device := gomtl.CreateSystemDefaultDevice()
+	device, err := gomtl.CreateSystemDefaultDevice()
+	if err != nil {
+		panic(err)
+	}
 	fmt.Println(device)
 }
