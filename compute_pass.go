@@ -4,7 +4,7 @@
 package gomtl
 
 /*
-#include "internal/cgo/compute_pass.h"
+#include "compute_pass.h"
 */
 import "C"
 import (

@@ -4,7 +4,7 @@
 package gomtl
 
 /*
-#include "internal/cgo/cmd_buffer.h"
+#include "cmd_buffer.h"
 */
 import "C"
 import "unsafe"

@@ -4,7 +4,7 @@
 package gomtl
 
 /*
-#include "internal/cgo/cmd_queue.h"
+#include "cmd_queue.h"
 */
 import "C"
 import "unsafe"
