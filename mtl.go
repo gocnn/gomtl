@@ -1,10 +1,11 @@
 //go:build darwin
+// +build darwin
 
 // Package gomtl provides Go bindings for the Metal framework.
 package gomtl
 
 /*
-#include "mtl.h"
+#include "internal/cgo/mtl.h"
 */
 import "C"
 import "unsafe"
@@ -39,6 +40,19 @@ const (
 	// Metal versions
 	GPUFamilyMetal3 GPUFamily = 5001
 	GPUFamilyMetal4 GPUFamily = 5002 // New
+)
+
+// MathMode represents the math mode for Metal shader compilation.
+//
+// Reference: https://developer.apple.com/documentation/metal/mtlmathmode
+type MathMode uint32
+
+const (
+	// MathModeSafe specifies that the compiler should use IEEE 754 compliant math operations.
+	MathModeSafe MathMode = 0
+
+	// MathModeFast specifies that the compiler can perform optimizations for floating-point arithmetic that may violate the IEEE 754 standard.
+	MathModeFast MathMode = 1
 )
 
 // CPUCacheMode is the CPU cache mode that defines the CPU mapping of a resource.

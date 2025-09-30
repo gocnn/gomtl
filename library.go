@@ -1,9 +1,10 @@
 //go:build darwin
+// +build darwin
 
 package gomtl
 
 /*
-#include "library.h"
+#include "internal/cgo/library.h"
 struct Library Go_Device_NewLibraryWithSource(void * device, _GoString_ source, struct CompileOptions opts) {
 	return Device_NewLibraryWithSource(device, _GoStringPtr(source), _GoStringLen(source), opts);
 }
