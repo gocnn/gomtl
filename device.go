@@ -6,7 +6,7 @@ package gomtl
 /*
 #include <stdlib.h>
 #include <stdbool.h>
-#include "internal/cgo/device.h"
+#include "device.h"
 */
 import "C"
 import (

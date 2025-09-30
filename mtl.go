@@ -5,7 +5,7 @@
 package gomtl
 
 /*
-#include "internal/cgo/mtl.h"
+#include "mtl.h"
 */
 import "C"
 import "unsafe"

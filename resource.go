@@ -4,7 +4,7 @@
 package gomtl
 
 /*
-#include "internal/cgo/resource.h"
+#include "resource.h"
 */
 import "C"
 import "unsafe"

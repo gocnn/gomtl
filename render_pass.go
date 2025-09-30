@@ -4,7 +4,7 @@
 package gomtl
 
 /*
-#include "internal/cgo/render_pass.h"
+#include "render_pass.h"
 */
 import "C"
 import (
