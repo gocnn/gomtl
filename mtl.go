@@ -1,4 +1,6 @@
-// Package mtl provides Go bindings for the Metal framework.
+//go:build darwin
+
+// Package gomtl provides Go bindings for the Metal framework.
 package gomtl
 
 /*
