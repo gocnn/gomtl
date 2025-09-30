@@ -1,9 +1,10 @@
 //go:build darwin
+// +build darwin
 
 package gomtl
 
 /*
-#include "resource.h"
+#include "internal/cgo/resource.h"
 */
 import "C"
 import "unsafe"

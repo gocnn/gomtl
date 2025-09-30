@@ -1,11 +1,12 @@
 //go:build darwin
+// +build darwin
 
 package gomtl
 
 /*
 #include <stdlib.h>
 #include <stdbool.h>
-#include "device.h"
+#include "internal/cgo/device.h"
 */
 import "C"
 import (
