@@ -1,4 +1,4 @@
-# gomet
+# gomtl
 
 Go bindings to Apple's framework Metal.
 
