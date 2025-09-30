@@ -4,7 +4,7 @@
 package gomtl
 
 /*
-#include "command_encoder.h"
+#include "internal/cgo/cmd_encoder.h"
 */
 import "C"
 import (
