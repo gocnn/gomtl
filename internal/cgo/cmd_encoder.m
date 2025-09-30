@@ -1,7 +1,5 @@
-// +build darwin
-
 #import <Metal/Metal.h>
-#include "command_encoder.h"
+#include "cmd_encoder.h"
 
 
 void CommandEncoder_EndEncoding(void * commandEncoder) {

@@ -1,7 +1,5 @@
-// +build darwin
-
 #import <Metal/Metal.h>
-#include "command_buffer.h"
+#include "cmd_buffer.h"
 
 void CommandBuffer_Commit(void * commandBuffer) {
 	[(id<MTLCommandBuffer>)commandBuffer commit];
