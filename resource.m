@@ -1,3 +1,6 @@
+//go:build darwin
+// +build darwin
+
 #import <Metal/Metal.h>
 #include "resource.h"
 
