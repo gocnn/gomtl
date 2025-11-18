@@ -39,7 +39,7 @@ func main() {
 	const n = 1024
 	a := make([]float32, n)
 	b := make([]float32, n)
-	for i := 0; i < n; i++ {
+	for i := range n {
 		a[i] = float32(i)
 		b[i] = float32(i * 2)
 	}
@@ -69,12 +69,12 @@ func main() {
 
 	// Verify results
 	results := (*[1024]float32)(bufferResult.Contents())[:n:n]
-	for i := 0; i < 5; i++ {
+	for i := range 10 {
 		expected := a[i] + b[i]
 		fmt.Printf("%.0f + %.0f = %.0f\n", a[i], b[i], results[i])
 		if results[i] != expected {
 			log.Fatalf("Incorrect result at %d: got %.1f, expected %.1f", i, results[i], expected)
 		}
 	}
-	fmt.Printf("✓ Vector addition completed successfully (%d elements)\n", n)
+	fmt.Printf("Vector addition completed successfully (%d elements)\n", n)
 }
